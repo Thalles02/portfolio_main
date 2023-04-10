@@ -50,6 +50,15 @@
             <div id="myContainer" class="chart-container flex-center">
                 <canvas id="myChart"></canvas>
             </div>
+
+            <div class="chart-secundary-container flex-spacebetween">
+                <div class="left-chart-secondary">
+                    <canvas id="myChartleft"></canvas>
+                </div>
+                <div class="right-chart-secondary">
+                    
+                </div>
+            </div>
         </div>
 
         <div class="right-dashboard">
@@ -91,6 +100,21 @@
             }
           }
         });
+
+        const ctleft = document.getElementById('myChartleft');
+        new Chart(ctleft, {
+            type: 'doughnut',
+            data: {
+              datasets: [{
+                data: [12, 19, 3],
+              }]
+            },
+            labels: [
+                'Red',
+                'Yellow',
+                'Blue'
+            ]
+          });
     </script>
     
 </body>
