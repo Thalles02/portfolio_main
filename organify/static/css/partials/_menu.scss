@@ -1,0 +1,59 @@
+.nav-bar{
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $primary-normal;
+
+    color: white;
+
+    h4{
+        color: $secondary-main;
+    }
+}
+
+.space-logo{
+    height: 15%;
+    padding: 24px;
+
+}
+
+.space-navigation{
+    height: 65%;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding: 16px;
+
+            svg{
+                width: 32px;
+                height: 32px;
+                fill: $icons;
+            }
+        }
+    }
+}
+
+.logout-icon{
+    height: 20%;
+
+    svg{
+        width: 32px;
+        height: 32px;
+        fill: $icons;
+    }
+}
+
+
+.right-dashboard{
+    width: 25%;
+    height: 100%;
+
+    background-color: $primary-light;
+}
