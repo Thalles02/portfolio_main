@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -6,6 +7,10 @@
 
 .white {
   color: white;
+}
+
+.gray {
+  color: #666566;
 }
 
 .container {
@@ -176,7 +181,6 @@ p, th, td, input, label {
 }
 
 strong {
-  color: #232224;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   line-height: 140%;
@@ -459,6 +463,126 @@ strong {
   background-color: #333236;
 }
 
+.container-head-right {
+  width: 100%;
+  height: 10%;
+  align-items: flex-end;
+}
+.container-head-right .head-content-right {
+  width: 100%;
+  border-bottom: 2px solid #585858;
+}
+.container-head-right a {
+  text-decoration: none;
+  color: #585858;
+  padding: 12px;
+}
+.container-head-right .active-menu {
+  color: #EEEDED;
+  border-bottom: 3px solid #EEEDED;
+}
+
+.profile-right-dashboard {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  border-bottom: 1px solid #27262C;
+}
+.profile-right-dashboard .left-profile {
+  width: 20%;
+  height: 100%;
+}
+.profile-right-dashboard .svg_container {
+  border: 1px solid #585858;
+  width: 38px;
+  height: 32px;
+  border-radius: 8px;
+}
+.profile-right-dashboard .svg_container .svg_content path {
+  fill: #EEEDED;
+}
+.profile-right-dashboard .center-profile {
+  width: 60%;
+  height: 100%;
+}
+.profile-right-dashboard .center-profile .img-profile-container {
+  width: 70%;
+  height: 60%;
+  background-image: url("../img/profile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 5px solid #0B8C56;
+}
+.profile-right-dashboard .center-profile a {
+  text-decoration: none;
+}
+.profile-right-dashboard .right-profile {
+  width: 20%;
+  height: 100%;
+}
+
+.card-right-container {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.card-right-container .card-content {
+  display: flex;
+}
+.card-right-container .card-back {
+  width: 130px;
+  height: 180px;
+  background-color: #0B8C56;
+  border-radius: 20px;
+  position: relative;
+}
+.card-right-container .card-back span {
+  position: absolute;
+  font-size: 12px;
+}
+.card-right-container .card-back p {
+  position: absolute;
+  z-index: 1;
+}
+.card-right-container .card-front {
+  width: 100%;
+  height: 73%;
+  border-radius: 20px;
+  background-color: #11613F;
+  position: absolute;
+  bottom: 0;
+}
+
+.lastest-projects-container {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+}
+.lastest-projects-container .img-last-project {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: red;
+}
+.lastest-projects-container .last-projects-container {
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #19181f;
+  white-space: nowrap;
+}
+.lastest-projects-container .last-project-card {
+  width: 100%;
+  padding: 24px;
+}
+.lastest-projects-container .last-project-card .svg-last {
+  width: 20px;
+}
+
 .main-dashboard-center {
   width: 65%;
   height: 100%;
@@ -501,11 +625,45 @@ strong {
   border-radius: 24px;
 }
 
+.chart-sec-container {
+  width: 50%;
+  height: 100%;
+}
+
+.right-sec-container {
+  width: 50%;
+  height: 100%;
+}
+.right-sec-container a {
+  text-decoration: none;
+}
+.right-sec-container ul {
+  list-style-type: disc;
+  list-style: none;
+}
+.right-sec-container ul li {
+  color: #0B8C56;
+}
+.right-sec-container ul li:before {
+  content: "·";
+  font-size: 100px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.right-sec-container ul .percent {
+  margin-left: 38px;
+}
+
 .right-chart-secondary {
   width: 49%;
   height: 100%;
   background-color: #27262C;
   border-radius: 24px;
+}
+
+.myChartRight {
+  width: 100%;
+  height: 100%;
 }
 
 html {

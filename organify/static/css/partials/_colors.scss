@@ -3,11 +3,12 @@
 $primary-normal: #27262C;
 $primary-light: #333236;
 $primary-dark: #19181f;
+$secondary-normal: #585858;
 
 $icons: #585858;
 
-$primary-main: #DE6830;
-$secondary-main: #0B8C56;
+$primary-main: #0B8C56;
+$secondary-main: #DE6830;
 
 // Employees Colors
 
@@ -51,4 +52,8 @@ $yellow-light: #ffd76b;
 
 .white{
     color: white;
+}
+
+.gray{
+    color: $gray-3;
 }

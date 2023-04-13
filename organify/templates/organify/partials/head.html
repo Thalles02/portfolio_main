@@ -1,121 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
-        integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+    integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
+    integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"
+    integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../static/js/svg-inject.min.js"></script>
-    
-    <title>Organify</title>
+  <script src="../static/js/svg-inject.min.js"></script>
+
+  <title>Organify</title>
 </head>
+
 <body>
-    <div class="container-dashboard  flex-center">
-        <div class="nav-bar ">
-            <div class="space-logo ">
-                <h4>Organify.</h4>
-            </div>
+  <div class="container-dashboard  flex-center">
+    <div class="nav-bar ">
+      <div class="space-logo">
+        <h4>Organify.</h4>
+      </div>
 
-            <div class="space-navigation ">
-                <ul>
-                    <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-                    <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-                    <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-                    <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-                    <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-                </ul>
-            </div>
+      <div class="space-navigation ">
+        <ul>
+          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+        </ul>
+      </div>
 
-            <div class="logout-icon flex-center ">
-                <img src="../static/svg/icon-logout.svg" alt="" onload="SVGInject(this)">
-            </div>
-        </div>
-
-        <div class="main-dashboard-center">
-            <div class="header-main-dashboard flex-spacebetween">
-                <h5 class="white">Dashboard</h5>
-            </div>
-
-            <div id="myContainer" class="chart-container flex-center">
-                <canvas id="myChart"></canvas>
-            </div>
-
-            <div class="chart-secundary-container flex-spacebetween">
-                <div class="left-chart-secondary">
-                    <canvas id="myChartleft"></canvas>
-                </div>
-                <div class="right-chart-secondary">
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="right-dashboard">
-            <a href="">a</a>
-        </div>
-
+      <div class="logout-icon flex-center ">
+        <img src="../static/svg/icon-logout.svg" alt="" onload="SVGInject(this)">
+      </div>
     </div>
 
-    <script>
+    <div class="main-dashboard-center">
+      <div class="header-main-dashboard flex-spacebetween">
+        <h5 class="white">Dashboard</h5>
+      </div>
 
-        const canvas = document.getElementById('myChart');
-        const container = document.getElementById('myContainer');
-        canvas.width = container.clientWidth;
-        canvas.height = container.clientHeight;
+      <div id="myContainer" class="chart-container flex-center">
+        <canvas id="myChart"></canvas>
+      </div>
 
-        const ctx = document.getElementById('myChart');
-      
-        new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-              label: false,
-              borderColor: '#0B8C56',
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1
-            },
-            {
-              borderColor: '#DE6830',
-              data: [5, 9, 8, 11, 20, 15],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
+      <div class="chart-secundary-container flex-spacebetween">
+        <div class="left-chart-secondary flex-center">
+          <div class="chart-sec-container flex-center">
+            <canvas id="myChartleft"></canvas>
+          </div>
+          <div class="right-sec-container flex-center">
+            <div class="top-desc-chart">
+              <div class="project1">
+                <ul>
+                  <li> <strong class="white">UX/UI Design</strong> <br> <strong class="gray percent">22%</strong> </li>
+                </ul>
+                <ul class="mt-1">
+                  <li style="color: #0B8C56"> <strong class="white">Brand Design</strong> <br> <strong
+                      class="gray percent">33%</strong> </li>
+                </ul>
+                <ul class="mt-1">
+                  <li style="color: #c31e27"> <strong class="white">Ecommerce Design</strong> <br> <strong
+                      class="gray percent">38%</strong> </li>
+                </ul>
+                <ul class="mt-1">
+                  <li style="color: #d1c35d"> <strong class='white'>Product Design</strong> <br> <strong
+                      class="gray percent">7%</strong> </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="myContainerRight" class="right-chart-secondary flex-center">
+          <a href="">teste</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-dashboard">
+      <div class="container-head-right flex-center">
+        <div class="head-content-right flex-center">
+          <a class="active-menu" href=""><strong>Profile</strong></a>
+          <a class="" href=""><strong>History</strong></a>
+          <a class="" href=""><strong>Payments</strong></a>
+          <a class="" href=""><strong>Status</strong></a>
+        </div>
+      </div>
+
+      <div class="profile-right-dashboard">
+        <div class="left-profile flex-end">
+          <div class="svg_container flex-center">
+            <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
+          </div>
+        </div>
+        <div class="center-profile flex-center flex-column">
+          <div class="img-profile-container"></div>
+          <h5>Thalles Augusto</h5>
+          <p><strong>Dev Full-Stack</strong></p>
+        </div>
+        <div class="right-profile flex-start">
+          <div class="svg_container flex-center">
+            <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="card-right-container flex-column">
+        <p class="white"><strong>Current Projects</strong></p>
+        <div class="card-content">
+          <div class="card-back mt-1">
+            <p class="white p-1"><strong>Portfólio</strong><br><span>Full-Stack</span></p>
+            <img src="../static/svg/detail-card.svg" alt="" onload="SVGInject(this)">
+            <div class="card-front">
+              <img src="../static/svg/detail-card.svg" alt="" onload="SVGInject(this)">
+            </div>
+          </div>
+          <div class="card-back mt-1 ml-1">
+            <p class="white p-1"><strong>Organify</strong><br><span>Full-Stack</span></p>
+            <img src="../static/svg/detail-card.svg" alt="" onload="SVGInject(this)">
+            <div class="card-front">
+              <img src="../static/svg/detail-card.svg" alt="" onload="SVGInject(this)">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="lastest-projects-container">
+        <p class="white"><strong>Last Projects</strong></p>
+        <div class="last-projects-container flex-center">
+          <div class="last-project-card flex-spacebetween">
+            <div class="img-last-project"></div>
+            <p class="white"><strong>Organify</strong><br><span
+                style="font-size: 12px; color: #585858;">Full-Stack</span></p>
+            <img class="svg-last" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    const canvas = document.getElementById('myChart');
+    const container = document.getElementById('myContainer');
+    canvas.width = container.clientWidth;
+    canvas.height = container.clientHeight;
+
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: false,
+          borderColor: '#0B8C56',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        },
+        {
+          borderColor: '#DE6830',
+          data: [5, 9, 8, 11, 20, 15],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false
           }
-        });
+        }
+      }
+    });
 
-        const ctleft = document.getElementById('myChartleft');
-        new Chart(ctleft, {
-            type: 'doughnut',
-            data: {
-              datasets: [{
-                data: [12, 19, 3],
-              }]
-            },
-            labels: [
-                'Red',
-                'Yellow',
-                'Blue'
-            ]
-          });
-    </script>
-    
+    const ctleft = document.getElementById('myChartleft');
+    new Chart(ctleft, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [22, 33, 38, 7],
+          backgroundColor: [
+            '#DE6830',
+            '#0B8C56',
+            '#c31e27',
+            '#d1c35d'
+          ],
+        }]
+      },
+      options: {
+        borderWidth: 0,
+      }
+    });
+
+    const ctright = document.getElementById('myChartRight');
+
+    new Chart(ctright, {
+      //código
+    });
+  </script>
+
 </body>
+
 </html>

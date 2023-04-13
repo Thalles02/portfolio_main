@@ -150,7 +150,7 @@ p, th, td, input, label {
 }
 
 strong {
-    color: $black-normal;
+    //color: $black-normal;
     @include typeface-2(p2, desktop);
 
     @include responsive(s) {
