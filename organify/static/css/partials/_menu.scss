@@ -1,6 +1,7 @@
 .nav-bar{
     width: 10%;
     height: 100%;
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -13,6 +14,10 @@
 
     h4{
         color: $primary-main;
+    }
+
+    @include responsive(med_dash){
+        display: none;
     }
 }
 
@@ -39,6 +44,10 @@
     }
 }
 
+#active-menu-left{
+    fill: $primary-main;
+}
+
 .logout-icon{
     height: 20%;
 
@@ -54,6 +63,10 @@
     height: 100%;
 
     background-color: $primary-light;
+
+    @include responsive(med_dash){
+        display: none;
+    }
 }
 
 .container-head-right{
@@ -81,7 +94,7 @@
 
 .profile-right-dashboard{
     width: 100%;
-    height: 35%;
+    height: 30%;
     display: flex;
     border-bottom: 1px solid $primary-normal;
 
@@ -108,8 +121,8 @@
         height: 100%;
 
         .img-profile-container{
-            width: 70%;
-            height: 60%;
+            width: 100px;
+            height: 100px;
             background-image: url('../img/profile.png');
             background-size: cover;
             background-position: center;
@@ -128,12 +141,16 @@
     }
 }
 
+.title-current-projects{
+    width: 100%;
+}
+
 .card-right-container{
     width: 100%;
     height: 35%;
     display: flex;
     justify-content: center;
-    padding: 8px;
+    padding: 24px;
 
     .card-content{
         display: flex;
@@ -170,13 +187,17 @@
 .lastest-projects-container{
     width: 100%;
     height: auto;
-    padding: 8px;
+    padding-right: 24px;
+    padding-left: 24px;
 
     .img-last-project{
         width: 32px;
         height: 32px;
         border-radius: 50%;
-        background: red;
+        background-image: url('../img/profile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .last-projects-container{

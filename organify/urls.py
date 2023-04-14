@@ -4,5 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home)
+    path('', home),
+    path('workspaces/', workspaces)
 ]

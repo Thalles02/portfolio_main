@@ -22,8 +22,33 @@ body{
     position: relative;
     scroll-behavior: smooth;
 
-    background-color: $white-normal;
+    background-color: $primary-dark;
 }
+
+header {
+    min-height: 100vh;
+}
+
+/* define a largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 3px;
+
+    @include responsive(s){
+        display: none;
+    }
+}
+
+/* define a cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* define a cor da alça (o botão de arrastar) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
 
 svg, img{
     display: block;

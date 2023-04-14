@@ -30,21 +30,22 @@
 
 <body>
   <div class="container-dashboard  flex-center">
-    <div class="nav-bar ">
+
+    <div class="nav-bar">
       <div class="space-logo">
         <h4>Organify.</h4>
       </div>
-
-      <div class="space-navigation ">
+      <div class="space-navigation">
         <ul>
-          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
-          <li><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></li>
+          <li class="active-menu-left"> <a href=""><img id="active-menu-left" src="../static/svg/icon-home.svg" alt=""
+                onload="SVGInject(this)"></a></li>
+          <li> <a href="/workspaces"><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
+          </li>
+          <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a></li>
+          <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a></li>
+          <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a></li>
         </ul>
       </div>
-
       <div class="logout-icon flex-center ">
         <img src="../static/svg/icon-logout.svg" alt="" onload="SVGInject(this)">
       </div>
@@ -54,11 +55,9 @@
       <div class="header-main-dashboard flex-spacebetween">
         <h5 class="white">Dashboard</h5>
       </div>
-
       <div id="myContainer" class="chart-container flex-center">
         <canvas id="myChart"></canvas>
       </div>
-
       <div class="chart-secundary-container flex-spacebetween">
         <div class="left-chart-secondary flex-center">
           <div class="chart-sec-container flex-center">
@@ -68,27 +67,30 @@
             <div class="top-desc-chart">
               <div class="project1">
                 <ul>
-                  <li> <strong class="white">UX/UI Design</strong> <br> <strong class="gray percent">22%</strong> </li>
+                  <li> <strong class="white">UX/UI Design</strong> <br> <strong class="gray percent">22%</strong>
+                  </li>
                 </ul>
                 <ul class="mt-1">
                   <li style="color: #0B8C56"> <strong class="white">Brand Design</strong> <br> <strong
                       class="gray percent">33%</strong> </li>
                 </ul>
-                <ul class="mt-1">
-                  <li style="color: #c31e27"> <strong class="white">Ecommerce Design</strong> <br> <strong
-                      class="gray percent">38%</strong> </li>
-                </ul>
-                <ul class="mt-1">
-                  <li style="color: #d1c35d"> <strong class='white'>Product Design</strong> <br> <strong
-                      class="gray percent">7%</strong> </li>
-                </ul>
+                <div class="down-mobile">
+                  <ul class="mt-1">
+                    <li style="color: #c31e27"> <strong class="white">Ecommerce Design</strong> <br> <strong
+                        class="gray percent">38%</strong> </li>
+                  </ul>
+                  <ul class="mt-1">
+                    <li style="color: #d1c35d"> <strong class='white'>Product Design</strong> <br> <strong
+                        class="gray percent">7%</strong> </li>
+                  </ul>
+                </div>
               </div>
 
             </div>
           </div>
         </div>
         <div id="myContainerRight" class="right-chart-secondary flex-center">
-          <a href="">teste</a>
+          <canvas id="myChartRight"></canvas>
         </div>
       </div>
     </div>
@@ -103,21 +105,17 @@
         </div>
       </div>
 
-      <div class="profile-right-dashboard">
-        <div class="left-profile flex-end">
-          <div class="svg_container flex-center">
-            <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
-          </div>
+      <div class="profile-right-dashboard flex-center">
+        <div class="svg_container flex-center">
+          <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
         </div>
         <div class="center-profile flex-center flex-column">
           <div class="img-profile-container"></div>
           <h5>Thalles Augusto</h5>
           <p><strong>Dev Full-Stack</strong></p>
         </div>
-        <div class="right-profile flex-start">
-          <div class="svg_container flex-center">
-            <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
-          </div>
+        <div class="svg_container flex-center">
+          <img class="svg_content" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
         </div>
       </div>
 
@@ -139,19 +137,31 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="lastest-projects-container">
         <p class="white"><strong>Last Projects</strong></p>
-        <div class="last-projects-container flex-center">
+        <div class="last-projects-container flex-center mt-1">
           <div class="last-project-card flex-spacebetween">
             <div class="img-last-project"></div>
-            <p class="white"><strong>Organify</strong><br><span
-                style="font-size: 12px; color: #585858;">Full-Stack</span></p>
+            <div class="title flex-column">
+              <p class="white"><strong>Organify</strong></p>
+              <p class="gay" style="font-size: 10px;"><strong>Full-Stack</strong></p>
+            </div>
             <img class="svg-last" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
           </div>
         </div>
+        <div class="last-projects-container flex-center mt-1">
+          <div class="last-project-card flex-spacebetween">
+            <div class="img-last-project"></div>
+            <div class="title flex-column">
+              <p class="white"><strong>Organify</strong></p>
+              <p class="gay" style="font-size: 10px;"><strong>Full-Stack</strong></p>
+            </div>
+            <img class="svg-last" src="../static/svg/notifications.svg" alt="" onload="SVGInject(this)">
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -169,24 +179,24 @@
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
         datasets: [{
-          label: false,
-          borderColor: '#0B8C56',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        },
-        {
-          borderColor: '#DE6830',
-          data: [5, 9, 8, 11, 20, 15],
-          borderWidth: 1
-        }]
+          data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478],
+          label: "Africa",
+          borderColor: "#DE6830",
+          fill: false
+        }, {
+          data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
+          label: "Asia",
+          borderColor: "#0B8C56",
+          fill: false
+        }
+        ]
       },
       options: {
-        plugins: {
-          legend: {
-            display: false
-          }
+        title: {
+          display: true,
+          text: 'World population per region (in millions)'
         }
       }
     });
@@ -213,7 +223,30 @@
     const ctright = document.getElementById('myChartRight');
 
     new Chart(ctright, {
-      //código
+      type: 'bar',
+      data: {
+        labels: ["1900", "1950", "1999", "2050"],
+        datasets: [{
+          label: "Europe",
+          type: "bar",
+          backgroundColor: "#0B8C56",
+          data: [408, 547, 675, 734],
+        }, {
+          label: "Africa",
+          type: "bar",
+          backgroundColor: "#e3d464",
+          backgroundColorHover: "#e3d464",
+          data: [133, 221, 783, 2478]
+        }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Population growth (millions): Europe & Africa'
+        },
+        legend: { display: false }
+      }
     });
   </script>
 

@@ -31,8 +31,27 @@
 }
 
 .container-dashboard {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.page-container {
+  margin: 0 auto;
   height: 100%;
   width: 100%;
+  padding: 24px;
+}
+@media screen and (max-width: 960px) {
+  .page-container {
+    flex-direction: column;
+    padding: 32px 18px;
+  }
 }
 
 .flex-start {
@@ -92,7 +111,7 @@
 }
 
 h1 {
-  color: #232224;
+  color: #EEEDED;
   font-family: "Sora", sans-serif;
   font-size: 64px;
   line-height: 100%;
@@ -106,7 +125,7 @@ h1 {
 }
 
 h2 {
-  color: #232224;
+  color: #EEEDED;
   font-family: "Sora", sans-serif;
   font-size: 52px;
   line-height: 100%;
@@ -120,7 +139,7 @@ h2 {
 }
 
 h3 {
-  color: #232224;
+  color: #EEEDED;
   font-family: "Sora", sans-serif;
   font-size: 36px;
   line-height: 120%;
@@ -134,7 +153,7 @@ h3 {
 }
 
 h4 {
-  color: #232224;
+  color: #EEEDED;
   font-family: "Sora", sans-serif;
   font-size: 24px;
   line-height: 130%;
@@ -417,6 +436,7 @@ strong {
 .nav-bar {
   width: 10%;
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -426,6 +446,11 @@ strong {
 }
 .nav-bar h4 {
   color: #0B8C56;
+}
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    display: none;
+  }
 }
 
 .space-logo {
@@ -448,6 +473,10 @@ strong {
   fill: #585858;
 }
 
+#active-menu-left {
+  fill: #0B8C56;
+}
+
 .logout-icon {
   height: 20%;
 }
@@ -461,6 +490,11 @@ strong {
   width: 25%;
   height: 100%;
   background-color: #333236;
+}
+@media screen and (max-width: 1200px) {
+  .right-dashboard {
+    display: none;
+  }
 }
 
 .container-head-right {
@@ -484,7 +518,7 @@ strong {
 
 .profile-right-dashboard {
   width: 100%;
-  height: 35%;
+  height: 30%;
   display: flex;
   border-bottom: 1px solid #27262C;
 }
@@ -506,8 +540,8 @@ strong {
   height: 100%;
 }
 .profile-right-dashboard .center-profile .img-profile-container {
-  width: 70%;
-  height: 60%;
+  width: 100px;
+  height: 100px;
   background-image: url("../img/profile.png");
   background-size: cover;
   background-position: center;
@@ -523,12 +557,16 @@ strong {
   height: 100%;
 }
 
+.title-current-projects {
+  width: 100%;
+}
+
 .card-right-container {
   width: 100%;
   height: 35%;
   display: flex;
   justify-content: center;
-  padding: 8px;
+  padding: 24px;
 }
 .card-right-container .card-content {
   display: flex;
@@ -560,13 +598,17 @@ strong {
 .lastest-projects-container {
   width: 100%;
   height: auto;
-  padding: 8px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .lastest-projects-container .img-last-project {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: red;
+  background-image: url("../img/profile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .lastest-projects-container .last-projects-container {
   width: 90%;
@@ -588,6 +630,13 @@ strong {
   height: 100%;
   padding: 8px;
   background-color: #19181f;
+  overflow-y: auto;
+}
+@media screen and (max-width: 1200px) {
+  .main-dashboard-center {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .header-main-dashboard {
@@ -617,12 +666,22 @@ strong {
   padding: 8px;
   margin-top: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .chart-secundary-container {
+    flex-direction: column;
+  }
+}
 
 .left-chart-secondary {
   width: 49%;
   height: 100%;
   background-color: #27262C;
   border-radius: 24px;
+}
+@media screen and (max-width: 1200px) {
+  .left-chart-secondary {
+    width: 100%;
+  }
 }
 
 .chart-sec-container {
@@ -653,12 +712,26 @@ strong {
 .right-sec-container ul .percent {
   margin-left: 38px;
 }
+@media screen and (max-width: 1200px) {
+  .right-sec-container {
+    width: 50%;
+    height: 100%;
+  }
+}
 
 .right-chart-secondary {
   width: 49%;
   height: 100%;
+  padding: 8px;
   background-color: #27262C;
   border-radius: 24px;
+}
+@media screen and (max-width: 1200px) {
+  .right-chart-secondary {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 200px;
+  }
 }
 
 .myChartRight {
@@ -675,7 +748,32 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
-  background-color: #EEEDED;
+  background-color: #19181f;
+}
+
+header {
+  min-height: 100vh;
+}
+
+/* define a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 3px;
+}
+@media screen and (max-width: 960px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* define a cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* define a cor da alça (o botão de arrastar) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
 }
 
 svg, img {

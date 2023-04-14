@@ -23,6 +23,11 @@ $card-box-shadow: 0px 17px 17px rgba(44, 38, 44, 0.08), 0px 5.125px 5.125px rgba
       @media screen and (max-width: $container-l) and (min-width: $container-s) {
         @content;
       }
+    } @else if $device == med_dash{
+      // Para resoluções entre 960px e 1440px
+      @media screen and (max-width: 1200px) {
+        @content;
+      }
     } @else if $device == s {
       // Para resoluções abaixo de 960px
       @media screen and (max-width: $container-m) {
@@ -57,8 +62,29 @@ $card-box-shadow: 0px 17px 17px rgba(44, 38, 44, 0.08), 0px 5.125px 5.125px rgba
 }
 
 .container-dashboard{
+  max-width: $container-xl;
+  margin: 0 auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.page-container{
+  margin: 0 auto;
   height: 100%;
   width: 100%;
+
+  padding: 24px;
+
+  @include responsive(s){
+    flex-direction: column;
+
+    padding: 32px 18px;
+  }
 }
 
 

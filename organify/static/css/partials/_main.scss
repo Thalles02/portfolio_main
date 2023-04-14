@@ -1,16 +1,22 @@
-.main-dashboard-center{
+.main-dashboard-center {
     width: 65%;
     height: 100%;
     padding: 8px;
 
     background-color: $primary-dark;
+    overflow-y: auto;
+
+    @include responsive(med_dash) {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.header-main-dashboard{
+.header-main-dashboard {
     padding: 16px;
 }
 
-.chart-container{
+.chart-container {
     width: 95%;
     height: 300px;
     margin: 0 auto;
@@ -23,72 +29,92 @@
     border-radius: 24px;
 }
 
-#myChart{
+#myChart {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.chart-secundary-container{
+.chart-secundary-container {
     width: 95%;
     height: 250px;
     margin: 0 auto;
     padding: 8px;
 
     margin-top: 20px;
+
+    @include responsive(med_dash) {
+        flex-direction: column;
+    }
 }
 
-.left-chart-secondary{
+.left-chart-secondary {
     width: 49%;
     height: 100%;
 
     background-color: $primary-normal;
     border-radius: 24px;
+
+    @include responsive(med_dash) {
+        width: 100%;
+    }
 }
 
-.chart-sec-container{
+.chart-sec-container {
     width: 50%;
     height: 100%;
 }
 
-.right-sec-container{
+.right-sec-container {
     width: 50%;
     height: 100%;
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    ul{
+    ul {
         list-style-type: disc;
         list-style: none;
-        li{
+
+        li {
             color: $primary-main;
         }
+
         li:before {
-            content:"·";
-            font-size:100px;
-            vertical-align:middle;
-            line-height:20px;
+            content: "·";
+            font-size: 100px;
+            vertical-align: middle;
+            line-height: 20px;
         }
 
-        .percent{
+        .percent {
             margin-left: 38px;
         }
     }
+
+    @include responsive(med_dash) {
+        width: 50%;
+        height: 100%;
+    }
 }
 
-.right-chart-secondary{
+.right-chart-secondary {
     width: 49%;
     height: 100%;
+    padding: 8px;
 
     background-color: $primary-normal;
     border-radius: 24px;
+
+    @include responsive(med_dash) {
+        margin-top: 20px;
+        width: 100%;
+        min-height: 200px;
+    }
 }
 
-.myChartRight{
+.myChartRight {
     width: 100%;
     height: 100%;
 }
-
-

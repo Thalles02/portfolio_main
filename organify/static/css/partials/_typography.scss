@@ -89,7 +89,7 @@
 }
 
 h1 {
-    color: $black-normal;
+    color: $white-normal;
     @include typeface-1(h1, desktop);
 
     @include responsive(s) {
@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-    color: $black-normal;
+    color: $white-normal;
     @include typeface-1(h2, desktop);
 
     @include responsive(s) {
@@ -107,7 +107,7 @@ h2 {
 }
 
 h3 {
-    color: $black-normal;
+    color: $white-normal;
     @include typeface-1(h3, desktop);
 
     @include responsive(s) {
@@ -116,7 +116,7 @@ h3 {
 }
 
 h4 {
-    color: $black-normal;
+    color: $white-normal;
     @include typeface-1(h4, desktop);
 
     @include responsive(s) {
@@ -150,7 +150,7 @@ p, th, td, input, label {
 }
 
 strong {
-    //color: $black-normal;
+    //color: $white-normal;
     @include typeface-2(p2, desktop);
 
     @include responsive(s) {
