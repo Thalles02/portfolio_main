@@ -14,3 +14,20 @@
         0px 0.769896px 0.769896px rgba(44, 38, 44, 0.08);
 
 }
+
+.new_register_btn{
+    padding: 5px;
+    background-color: $primary-normal;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    color: $white-normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new_register_btn:hover{
+
+    background-color: rgba(255, 255, 255, .05);
+
+}

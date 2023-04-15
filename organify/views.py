@@ -16,3 +16,8 @@ def workspaces(request):
     return render(request, 'organify/partials/workspaces.html', context={
         'name': name,
     })
+
+def objects(request):
+    return render(request, 'organify/partials/table.html', context={
+        'name': name,
+    })

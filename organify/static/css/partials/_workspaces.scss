@@ -1,0 +1,28 @@
+.container-workspace-content{
+    width: 100%;
+    padding: 24px;
+}
+
+.item-content{
+    width: 64px;
+    height: auto;
+    cursor: pointer;
+
+    a{
+        text-decoration: none;
+    }
+    p{
+        padding: 4px;
+    }
+}
+
+.item-workspace{
+    width: 64px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: $secondary-normal;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
