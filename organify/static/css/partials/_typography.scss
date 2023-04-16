@@ -134,13 +134,17 @@ h5 {
     }
 }
 
-p, th, td, input, label {
+th, td, input, label {
     color: $gray-4;
     @include typeface-2(p2, desktop);
 
     @include responsive(s) {
         @include typeface-2(p2, mobile);
     }
+}
+
+p{
+    color: $gray-4;
 }
 
 

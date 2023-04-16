@@ -21,3 +21,8 @@ def objects(request):
     return render(request, 'organify/partials/table.html', context={
         'name': name,
     })
+
+def kanban(request):
+    return render(request, 'organify/partials/kanban.html', context={
+        'name': name,
+    })

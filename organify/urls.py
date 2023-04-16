@@ -6,5 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('workspaces/', workspaces),
-    path('object/', objects)
+    path('object/', objects),
+    path('kanban/', kanban)
 ]
