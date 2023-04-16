@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +23,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../static/js/svg-inject.min.js"></script>
+    <script src="../../static/js/svg-inject.min.js"></script>
 
     <title>Organify</title>
 </head>
@@ -38,20 +38,20 @@
             <div class="space-navigation">
                 <ul>
                     <li class="active-menu-left"> <a href=""><img id="active-menu-left"
-                                src="../static/svg/icon-home.svg" alt="" onload="SVGInject(this)"></a></li>
-                    <li> <a href="/workspaces"><img src="../static/svg/icon-workspace.svg" alt=""
+                                src="../../static/svg/icon-home.svg" alt="" onload="SVGInject(this)"></a></li>
+                    <li> <a href="/organify/workspaces"><img src="../../static/svg/icon-workspace.svg" alt=""
                                 onload="SVGInject(this)"></a>
                     </li>
-                    <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
+                    <li> <a href=""><img src="../../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
                     </li>
-                    <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
+                    <li> <a href=""><img src="../../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
                     </li>
-                    <li> <a href=""><img src="../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
+                    <li> <a href=""><img src="../../static/svg/icon-workspace.svg" alt="" onload="SVGInject(this)"></a>
                     </li>
                 </ul>
             </div>
             <div class="logout-icon flex-center ">
-                <img src="../static/svg/icon-logout.svg" alt="" onload="SVGInject(this)">
+                <img src="../../static/svg/icon-logout.svg" alt="" onload="SVGInject(this)">
             </div>
         </div>
 
@@ -63,41 +63,39 @@
 
             <div class="header-table-container flex-spacebetween">
                 <div class="items-table">
-                    <button class="new_register_btn">Tabela</button>
-                    <button class="new_register_btn active-object">Kanban</button>
+                    <button class="new_register_btn active-object">Tabela</button>
+                    <button class="new_register_btn">Kanban</button>
                 </div>
                 <div class="filters-table">
                     <button class="new_register_btn">Kanban</button>
                 </div>
             </div>
 
-            <div class="kanban-content flex-start">
-
-                <div class="step-kanban">
-                    <div class="title-step-kanban flex-spacebetween">
-                        <a href="#"><b>Triagem</b></a>
-                        <p>+</p>
-                    </div>
-                    <div class="cards-kanban">
-                        <p>Nome do colaborador: <br><b>Thalles Augusto Monteiro Martins</b></p>
-                        <p class="mt-1">Empresa solicitante:<br><a>Dev Thalles</a></p>
-                    </div>
-                    <div class="cards-kanban">
-                        <p>Nome do colaborador: <br><b>Thalles Augusto Monteiro Martins</b></p>
-                        <p class="mt-1">Empresa solicitante:<br><a>Dev Thalles</a></p>
-                    </div>
-                </div>
-                <div class="step-kanban">
-                    <div class="title-step-kanban flex-spacebetween">
-                        <a href="#"><b>Desenvolvimento</b></a>
-                        <p>+</p>
-                    </div>
-                    <div class="cards-kanban">
-                        <p>Nome do colaborador: <br><b>Thalles Augusto Monteiro Martins</b></p>
-                        <p class="mt-1">Empresa solicitante:<br><a>Dev Thalles</a></p>
-                    </div>
-                </div>
-
+            <div class="kanban-content">
+                <table class="">
+                    <thead>
+                        <tr>
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <th>Coluna 3</th>
+                            <!-- Adicione mais colunas, se necessário -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Valor 1</td>
+                            <td>Valor 2</td>
+                            <td>Valor 3</td>
+                            <!-- Adicione mais colunas, se necessário -->
+                        </tr>
+                        <tr>
+                            <td>Valor 1</td>
+                            <td>Valor 2</td>
+                            <td>Valor 3</td>
+                            <!-- Adicione mais colunas, se necessário -->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
