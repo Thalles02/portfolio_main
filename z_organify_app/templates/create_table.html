@@ -1,0 +1,6 @@
+<form id="myForm" class="form-admission mt-1" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Nome da Tabela:</label>
+    <input class="name_table" name="name_table" id="name_table" type="text">
+    <button style="width: 100%;" class="mt-2 btn-jobs" type="submit" value="submit">Enviar</button>
+</form>

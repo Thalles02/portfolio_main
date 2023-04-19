@@ -1,0 +1,19 @@
+<h1>Tabela dinâmica: {{ dynamic_model_class._meta.verbose_name_plural }}</h1>
+<table>
+    <thead>
+        <tr>
+            {% for field in dynamic_model_class._meta.fields %}
+            <th>{{ field.verbose_name }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            {% for field in dynamic_model_class._meta.fields %}
+            <td>{{ getattr(row, field.name) }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

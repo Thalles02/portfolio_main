@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Adicionar dados na tabela "{{ table_name }}"</h1>
+<form method="post">
+    {% csrf_token %}
+    {% for field_name, field_label in fields.items %}
+    <label for="{{ field_name }}">{{ field_label }}:</label>
+    {% if field_name == 'is_active' %}
+    <input type="checkbox" name="{{ field_name }}" id="{{ field_name }}">
+    {% else %}
+    <input type="text" name="{{ field_name }}" id="{{ field_name }}">
+    {% endif %}
+    {% endfor %}
+    <input type="submit" value="Salvar">
+</form>
+{% endblock %}
